@@ -1,5 +1,5 @@
 var button = document.querySelector("button");
-var textValue = document.querySelector("textarea").value;
+var textValue = document.querySelector("textarea");
 var outputDiv = document.querySelector(".output")
 
 document.querySelector("textarea").addEventListener("change", function() {
@@ -7,7 +7,7 @@ document.querySelector("textarea").addEventListener("change", function() {
 })
 
 button.addEventListener("click", function(eObj) {
-  var result = processTheText(textValue);
+  var result = processTheText(textValue.value);
   outputDiv.innerHTML = `${result}`;
 })
 
