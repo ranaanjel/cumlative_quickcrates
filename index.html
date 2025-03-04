@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>totalling the items</title>
+</head>
+<style>
+  body {
+    text-align: center;
+  }
+  button {
+    padding:8px;
+    border-radius: 0.5rem;
+    margin:1rem;
+  }
+  textarea {
+    width: 300px;
+    height: 400px;
+  }
+  .input {
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    margin:1rem;
+    flex-direction: column;
+  }
+  .output {
+    text-align: center;
+  }
+  .code {
+    width:250px;
+    height:300px;
+    text-align: left;
+    border:1px solid black;
+    background:gray;
+    padding: 10px;
+  }
+  .code-inside {
+    font-family: monospace;
+  }
+</style>
+<body>
+
+  <div class="input">
+    <textarea name="items" id="" cols="30" rows="10" placeholder="enter the value here" >
+    </textarea>
+  
+  <button>get the value</button>
+    <div class="code">
+      example : 
+      <div class="code-inside"> 
+        customer-name-1 <br>
+        quantity unit item-name <br>
+        <br>
+        customer-name-2 <br>
+        10 kg cabbage <br>
+        15 kg rice<br>
+        <br>
+        customer-name-3 <br>
+        15 kg cabbage<br>
+        5 kg rice<br>
+        <br>
+        result : <br>
+        25 kg cabbage  <br>
+        5 kg rice  <br>
+        <br>
+        caution : spelling mistake
+      </div>
+    </div>
+  </div>
+  <div>
+    output value : 
+    <div class="output"></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>
