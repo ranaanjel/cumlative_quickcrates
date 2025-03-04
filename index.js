@@ -4,11 +4,9 @@ var outputDiv = document.querySelector(".output")
 
 document.querySelector("textarea").addEventListener("change", function() {
   outputDiv.innerHTML = "";
-
 })
 
 button.addEventListener("click", function(eObj) {
-  outputDiv.innerHTML = ""
   var result = processTheText(textValue);
   outputDiv.innerHTML = `${result}`;
 })
